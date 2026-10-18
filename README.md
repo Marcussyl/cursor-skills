@@ -30,6 +30,7 @@ Do not put custom skills in `~/.cursor/skills-cursor/` — that path is reserved
 | `task-observer` | Log patterns worth turning into new skills |
 | `replay-briefly` | Short Chinese replies (`/replay-briefly`) |
 | `commit-msg` | One-line conventional commit from staged files (`/commit-msg`) |
+| `commit-batches` | Split work into related commits, then push (`/commit-batches`) |
 
 ## Manual-invocation skills
 
@@ -38,3 +39,4 @@ These set `disable-model-invocation: true` and run only when you invoke them:
 - `grill-me`
 - `replay-briefly`
 - `commit-msg`
+- `commit-batches`
