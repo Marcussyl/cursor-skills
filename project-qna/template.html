@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang='zh-Hant'>
+<head>
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>Project Q&A</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f6f5f2;
+      --ink: #1c1b19;
+      --card: #fffdf8;
+      --line: #e4e0d8;
+      --mark: #fff3a3;
+      --accent: #3d5a4c;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #171614;
+        --ink: #f3efe6;
+        --card: #221f1c;
+        --line: #3a342c;
+        --mark: #5c4b16;
+        --accent: #d7e2c8;
+      }
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 16px/1.5 Georgia, 'Songti TC', serif;
+    }
+    main {
+      max-width: 46rem;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+    .category-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1rem 0 2rem;
+    }
+    a.jump {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid var(--line);
+    }
+    h2 {
+      font-size: 1.35rem;
+      margin-top: 2.5rem;
+    }
+    p.section-note {
+      color: var(--accent);
+      margin-top: 0;
+    }
+    details {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      margin: 0.75rem 0;
+    }
+    mark {
+      background: var(--mark);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 0.45rem 0.6rem;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Project Q&A</h1>
+    <nav class='category-nav' aria-label='Categories'></nav>
+    <!--
+      One h2 per category. Each question is a details accordion:
+      summary = title, p.section-note = why this question, then the answer.
+      Use mark for highlights and a table when comparing options.
+    -->
+  </main>
+  <script>
+    const root = document.documentElement;
+    const stored = localStorage.getItem('qna-theme');
+    if (stored === 'light' || stored === 'dark') {
+      root.style.colorScheme = stored;
+    }
+    document.addEventListener('keydown', (event) => {
+      if (event.key !== 't') return;
+      const next = root.style.colorScheme === 'dark' ? 'light' : 'dark';
+      root.style.colorScheme = next;
+      localStorage.setItem('qna-theme', next);
+    });
+  </script>
+</body>
+</html>
