@@ -27,6 +27,7 @@ Do not put custom skills in `~/.cursor/skills-cursor/` — that path is reserved
 | `grilling` | Stress-test plans with numbered questions |
 | `grill-me` | Explicit entry point for `grilling` |
 | `project-qna` | Generate `project-docs/QnA.html` from chat Q&A |
+| `html-critical-path-test-guide` | Critical-path code review + dark-theme HTML QA guide in `project-docs/` |
 | `task-observer` | Log patterns worth turning into new skills |
 | `replay-briefly` | Short Chinese replies (`/replay-briefly`) |
 | `commit-msg` | One-line conventional commit from staged files (`/commit-msg`) |
