@@ -29,7 +29,8 @@ Do not put custom skills in `~/.cursor/skills-cursor/` — that path is reserved
 | `project-qna` | Generate `project-docs/QnA.html` from chat Q&A |
 | `html-critical-path-test-guide` | Critical-path code review + dark-theme HTML QA guide in `project-docs/` |
 | `task-observer` | Log patterns worth turning into new skills |
-| `replay-briefly` | Short Chinese replies (`/replay-briefly`) |
+| `replay-briefly` | Short Chinese, answer-only (`/replay-briefly`) |
+| `reply-briefly-always` | Brief replies for the rest of the chat (`/reply-briefly-always`) |
 | `commit-msg` | One-line conventional commit from staged files (`/commit-msg`) |
 | `commit-batches` | Split work into related commits, then push (`/commit-batches`) |
 
