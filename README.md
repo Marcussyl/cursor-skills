@@ -33,6 +33,7 @@ Do not put custom skills in `~/.cursor/skills-cursor/` — that path is reserved
 | `reply-briefly-always` | Brief replies for the rest of the chat (`/reply-briefly-always`) |
 | `commit-msg` | One-line conventional commit from staged files (`/commit-msg`) |
 | `commit-batches` | Split work into related commits, then push (`/commit-batches`) |
+| `ai-project-context` | Generate or update a six-file project context pack plus AGENTS.md before coding |
 
 ## Manual-invocation skills
 
