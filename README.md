@@ -44,6 +44,7 @@ Skills from that repo are symlinked into this tree (e.g. `socratic-tutor` → `.
 | `reply-briefly-always` | Brief replies for the rest of the chat (`/reply-briefly-always`) |
 | `commit-msg` | One-line conventional commit from staged files (`/commit-msg`) |
 | `commit-batches` | Split work into related commits, then push (`/commit-batches`) |
+| `ai-project-context` | Generate or update a six-file project context pack plus AGENTS.md before coding |
 | `socratic-tutor` | Socratic teaching sessions (`teach me`, `quiz me`, …) — vendored from [janestreet/agent_skills](https://github.com/janestreet/agent_skills) |
 
 ## Manual-invocation skills
