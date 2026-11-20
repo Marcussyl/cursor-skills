@@ -17,6 +17,17 @@ To use them as live skills, either:
 
 Do not put custom skills in `~/.cursor/skills-cursor/` — that path is reserved for Cursor built-in skills.
 
+### Third-party skills (Jane Street)
+
+Clone [janestreet/agent_skills](https://github.com/janestreet/agent_skills) next to this repo, then refresh vendored symlinks:
+
+```bash
+git clone https://github.com/janestreet/agent_skills.git ../agent_skills
+# or: git -C ../agent_skills pull
+```
+
+Skills from that repo are symlinked into this tree (e.g. `socratic-tutor` → `../agent_skills/socratic-tutor`) so they load everywhere via `~/.cursor/skills`.
+
 ## Skills
 
 | Skill | Summary |
@@ -33,6 +44,7 @@ Do not put custom skills in `~/.cursor/skills-cursor/` — that path is reserved
 | `reply-briefly-always` | Brief replies for the rest of the chat (`/reply-briefly-always`) |
 | `commit-msg` | One-line conventional commit from staged files (`/commit-msg`) |
 | `commit-batches` | Split work into related commits, then push (`/commit-batches`) |
+| `socratic-tutor` | Socratic teaching sessions (`teach me`, `quiz me`, …) — vendored from [janestreet/agent_skills](https://github.com/janestreet/agent_skills) |
 
 ## Manual-invocation skills
 
